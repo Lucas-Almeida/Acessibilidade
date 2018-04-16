@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.acessibilidade.map.AddLocalActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="395dp"
+        android:layout_height="697dp"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin"
+        app:layout_anchor="@+id/linearLayout"
+        app:layout_anchorGravity="right|bottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_endereco"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Endereço ou nome do local" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/input_referencia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Local de referência" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="Acessibilidades" />
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </RadioGroup>
+
+            <CheckBox
+                android:id="@+id/chkAuditivo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auditivo" />
+
+            <CheckBox
+                android:id="@+id/chkFisicaOuMotora"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Física ou Motora" />
+
+            <CheckBox
+                android:id="@+id/chkIdoso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Idoso" />
+
+            <CheckBox
+                android:id="@+id/chkIntelecturalOuMental"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Intelectual ou Mental" />
+
+            <CheckBox
+                android:id="@+id/chkMobilidadeReduzida"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mobilidade Reduzida" />
+
+            <CheckBox
+                android:id="@+id/chkObesidade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Obesidade" />
+
+            <CheckBox
+                android:id="@+id/chkVisual"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Visual" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_vertical_margin">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <EditText
+                    android:id="@+id/input_descicao"
+                    android:layout_width="match_parent"
+                    android:layout_height="78dp"
+                    android:hint="Comentário" />
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:text="Salvar" />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+
+</android.support.design.widget.CoordinatorLayout>
